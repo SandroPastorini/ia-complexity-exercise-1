@@ -28,14 +28,14 @@ fn main() {
 }
 
 fn selection_sort_profiling(list_size: usize, num_list: &mut Vec<i32>) {
-    for k in 0..9 {
+    // for k in 0..10 {
         let start_time = time::Instant::now();
         selection_sort(list_size, num_list);
         let end_time = time::Instant::now();
         let delta = end_time - start_time;
 
-        println!("Run {}: {}", k, delta.as_seconds_f64());
-    }
+        println!("Run: {}", delta.as_seconds_f64());
+    // }
 }
 
 fn selection_sort(list_size: usize, num_list: &mut Vec<i32>) {

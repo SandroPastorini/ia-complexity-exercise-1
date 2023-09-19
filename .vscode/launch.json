@@ -7,8 +7,111 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Launch",
-            "program": "${workspaceFolder}/main.rs",
+            "name": "Debug executable 'selection_sort'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=selection_sort",
+                    "--package=exercise-1"
+                ],
+                "filter": {
+                    "name": "selection_sort",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'selection_sort'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=selection_sort",
+                    "--package=exercise-1"
+                ],
+                "filter": {
+                    "name": "selection_sort",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'shell_sort'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=shell_sort",
+                    "--package=exercise-1"
+                ],
+                "filter": {
+                    "name": "shell_sort",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'shell_sort'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=shell_sort",
+                    "--package=exercise-1"
+                ],
+                "filter": {
+                    "name": "shell_sort",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'bubble_sort'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=bubble_sort",
+                    "--package=exercise-1"
+                ],
+                "filter": {
+                    "name": "bubble_sort",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'bubble_sort'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=bubble_sort",
+                    "--package=exercise-1"
+                ],
+                "filter": {
+                    "name": "bubble_sort",
+                    "kind": "bin"
+                }
+            },
             "args": [],
             "cwd": "${workspaceFolder}"
         }
